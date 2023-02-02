@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+html {
+  font-family: "Mohave";
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: #d0d6f9;
+  font-weight: 300;
+  background-attachment: fixed;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  display: none;
+}
+
+.navItemsMobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  height: 100%;
+  width: 15rem;
+  margin: 0;
+  padding: 2rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.navItemMobile {
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.navItemNum {
+  font-weight: 400;
+  color: white;
+}
+
+.pageContent {
+  height: 100%;
+}
+.heading {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.headingNum {
+  color: #d0d6f9;
+}
+
+.show {
+  display: flex;
+}
+.navItemsDesk {
+  display: none;
+}
+
+.navLine {
+  display: none;
+}
+
+@media (min-width: 40rem) {
+  .hamburgerContainer {
+    display: none;
+  }
+
+  .navItemsDesk {
+    list-style: none;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 25rem;
+    background-color: rgba(208, 214, 249, 0.07);
+    backdrop-filter: blur(10px);
+    height: 5rem;
+    margin: 0;
+  }
+
+  .navbar {
+    padding: 0;
+    padding-left: 2rem;
+  }
+
+  .navItemDesk {
+    margin: 0 0.3rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+
+  }
+
+  .navItemDesk:hover {
+    border-bottom: 2px solid white;
+  }
+
+  .navSelected {
+    border-bottom: 2px solid white;
+  }
+  .navItemNum {
+    display: none;
+  }
+}
+
+
+@media (min-width: 60rem) {
+    .navItemNum {
+      display: inline-block;
+    }
+    .navbar {
+        padding: 0;
+        padding-left: 3rem;
+        margin-top: 1rem;
+        position: relative;
+      }
+    
+      .navLine {
+        display: inline-block;
+        border: 0;
+        background-color: #d0d6f934;
+        height: 1px;
+        width: 30rem;
+        left: 10rem;
+        position: absolute;
+        z-index: 10;
+      }
+    
+      .navItemsDesk {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 45rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(3px);
+        height: 5rem;
+        padding: 0rem 8rem 0rem 5rem;
+      }
+}  

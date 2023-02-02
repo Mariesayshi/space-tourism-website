@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/shared/logo.svg"
+    />
+    <link rel="stylesheet" href="../Shared/shared.css" />
+    <link rel="stylesheet" href="./destination.css" />
+    <title>Space Tourism | Destination</title>
+  </head>
+  <body>
+    <div class="backdrop">
+      <ul class="navItemsMobile">
+        <li class="navItemMobile">
+          <a href="../index.html"><span class="navItemNum">00</span> Home</a>
+        </li>
+        <li class="navItemMobile">
+          <a href="../Destination"><span class="navItemNum">01</span> Destination</a>
+        </li>
+        <li class="navItemMobile">
+          <a href="../Crew"><span class="navItemNum">02</span> Crew</a>
+        </li>
+        <li class="navItemMobile">
+          <a href="../Technology"><span class="navItemNum">03</span> Technology</a>
+        </li>
+      </ul>
+    </div>
+    <nav class="navbar">
+      <a href="../index.html" class="logoContainer">
+        <img class="logo" src="../assets/shared/logo.svg" />
+      </a>
+
+      <div class="hamburgerContainer">
+        <img class="hamburger" src="../assets/shared/icon-hamburger.svg" />
+      </div>
+
+      <hr class="navLine"/>
+      
+      <ul class="navItemsDesk">
+        <li class="navItemDesk">
+          <a href="../index.html"><span class="navItemNum">00</span> Home</a>
+        </li>
+        <li class="navItemDesk">
+          <a href="../Destination"><span class="navItemNum">01</span> Destination</a>
+        </li>
+        <li class="navItemDesk">
+          <a href="../Crew"><span class="navItemNum">02</span> Crew</a>
+        </li>
+        <li class="navItemDesk">
+          <a href="../Technology"><span class="navItemNum">03</span> Technology</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="destinationContent pageContent">
+      <h3 class="heading">
+        <span class="headingNum">01</span> Pick your destination
+      </h3>
+
+      <div class="imgAndInfos">
+        <div class="planetImgContainer">
+          <img class="planetImg" />
+        </div>
+        <div class="planetInfos">
+          <ul class="planets">
+            <li class="planetLi moon">Moon</li>
+            <li class="planetLi mars">Mars</li>
+            <li class="planetLi europa">Europa</li>
+            <li class="planetLi titan">Titan</li>
+          </ul>
+
+          <div class="planetHeading"></div>
+          <p class="description"></p>
+          <hr class="dividerLine" />
+          <ul class="stats">
+            <li class="statItem">
+              Avg. distance
+              <div class="statHighlight distance">628 mil. km</div>
+            </li>
+            <li class="statItem">
+              Est. travel time
+              <div class="statHighlight travel">3 years</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="../Shared/shared.js"></script>
+    <script src="../Shared/data.js"></script>
+    <script src="./destination.js"></script>
+  </body>
+</html>

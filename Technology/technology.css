@@ -1,0 +1,180 @@
+body {
+  background-image: url("../assets/technology/background-technology-mobile.jpg");
+}
+
+.technologyContent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.technologyImgContainer {
+  width: 100%;
+  margin: 1rem 0rem;
+}
+
+.techImgMob {
+  width: 100%;
+}
+.techImgDesk {
+  display: none;
+}
+
+.techBtns {
+  margin: 1rem 0rem;
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.techBtn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 0.5px solid #d0d6f958;
+  background-color: transparent;
+  color: #d0d6f9;
+  font-family: "Cinzel";
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.techBtn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: white;
+  color: black;
+}
+
+.description {
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.techName {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Cinzel";
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.heading {
+  color: white;
+  margin: 1rem 0;
+}
+
+.subHeading {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnsAndText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 40rem) {
+  body {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+
+    min-height: 100vh;
+  }
+
+  .heading {
+    width: 100%;
+    padding-left: 2rem;
+    margin: 3rem 0rem 2rem 0rem;
+  }
+
+  .description {
+    max-width: 35rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  body {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+  }
+  .techImgMob {
+    display: none;
+  }
+
+  .techImgDesk {
+    display: flex;
+  }
+  .technologyContent {
+    padding: 2rem 0rem 2rem 7rem;
+    width: 100%;
+  }
+  .heading {
+    padding: 0;
+    font-size: 1.5rem;
+    margin: 2rem 0rem;
+  }
+  .btnsAndText {
+    flex-direction: row;
+  }
+  .techBtns {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 10rem;
+  }
+
+  .imgBtnsAndText {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .technologyImgContainer {
+    order: 2;
+    width: 30rem;
+    margin: 0rem;
+    margin-left: 2rem;
+  }
+  .text{
+    align-items: flex-start;
+    max-width: 30rem;
+  }
+  .description {
+    padding: 0;
+    text-align: left;
+  }
+  .techBtn {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .techBtn:last-of-type{
+    margin: 0;
+  }
+
+  .techBtns { 
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+  .techName { 
+    font-size: 2.5rem;
+  } 
+}
